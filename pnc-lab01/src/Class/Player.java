@@ -3,7 +3,10 @@ package Class;
 import Enum.PlayerRole;
 
 public class Player {
+    private static int idCounter = 0; 
+
     private int id; 
+    private String name;
     private int scoredGoals;
     private int matches;
     private PlayerRole role;
@@ -11,9 +14,10 @@ public class Player {
     public Player() {
     }
 
-    public Player(int id, int scoredGoals, int matches, PlayerRole role) {
-        this.id = id;
+    public Player(String name, int scoredGoals, int matches, PlayerRole role) {
+        this.id = idCounter++;
         this.scoredGoals = scoredGoals;
+        this.name = name;
         this.matches = matches;
         this.role = role;
     }
@@ -34,12 +38,16 @@ public class Player {
         this.role = role;
     }
 
-    public int getMatches() {
-        return matches;
+    public String getName() {
+        return name;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getMatches() {
+        return matches;
     }
 
     public void setScoredGoals(int scoredGoals) {

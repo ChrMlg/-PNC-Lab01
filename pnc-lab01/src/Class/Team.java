@@ -3,6 +3,8 @@ package Class;
 import java.util.LinkedList;
 
 public class Team {
+    private static int idCounter = 0; 
+
     private int id;
     private String name;
     private LinkedList<Player> players;
@@ -10,18 +12,20 @@ public class Team {
     public Team() {
     }
 
-    public Team(int id, String name, LinkedList<Player> players) {
-        this.id = id;
+    public Team(String name) {
+        this.id = idCounter++;
         this.name = name;
-        this.players = players;
+        this.players = new LinkedList<>();
+    }
+
+
+    //method to add players to a team
+    public void addPlayer(Player player){
+        players.add(player);
     }
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -32,6 +36,7 @@ public class Team {
         this.name = name;
     }
 
+    // get LL of players
     public LinkedList<Player> getPlayers() {
         return players;
     }
@@ -40,10 +45,11 @@ public class Team {
         this.players = players;
     }
 
-    
-
-
-
-
+    // print players on the team 
+    public void displayPlayers(){
+        for(Player player : players){
+            System.out.println(player);
+        }
+    }
 
 }
