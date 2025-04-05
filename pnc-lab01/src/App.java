@@ -36,13 +36,62 @@ public class App {
 
             switch (option) {
                 case 1: //Ver a los jugadores A y B
+                    /*
                     
+                    Borrador de como sera la estructura cuando ya este lo de DATA
+
+                     System.out.println("\n Lista de los jugadores ");
+                    for(Team equipo : TeamData.equipo){
+                        System.out.println("Equipo:" + equipo.getName());
+                        for(Player jugador : equipo.getPlayers()){
+                            System.out.println("ID: " + jugador.getId()+ "|Nombre:" + jugador.getName());
+                        }
+                        System.out.println(); 
+                    }
+                   
+                    */
                     break;
                 case 2: //Ver a los jugadores con mas de 5 goles en temporada
+
+                    /*
+                    Borrador de como sera la estructura cuando ya este DATA
+                    Esto toma en cuenta que, se tendra que mostrar, id, nombre, rol y cantidad de goles >5
+
+                   System.out.println("\nJugadores con más de 5 goles (ordenados por goles):");
+
+                 // Creamos una lista vacía que recolectará todos los jugadores
+                    List<Player> todosLosJugadores = new ArrayList<>();
+
+                   for (Team equipo : TeamData.equipo) {
+                      todosLosJugadores.addAll(equipo.getPlayers());
+                   }
+
+                 // Ocupamos Streams para filtrar, ordenar y mostrar
+                    List<Player> jugadoresFiltrados = todosLosJugadores.stream()
+                                 .filter(jugador -> jugador.getScoredGoals() > 5)
+                                 .sorted(Comparator.comparingInt(Player::getScoredGoals).reversed())
+                                 .collect(Collectors.toList());
+
+                 //Para tenerlo mas ordenado podemos hacer un ranking de mas a menos goles siempre bajo la condicion que hicimos antes
+                     if (jugadoresFiltrados.isEmpty()) {
+                     System.out.println("No hay jugadores con más de 5 goles todavia en esta temporada");
+                     } else {
+                        jugadoresFiltrados.forEach(jugador -> {
+                        System.out.println("ID: " + jugador.getId()
+                                                + " | Nombre: " + jugador.getName()
+                                                + " | Rol: " + jugador.getRole()
+                                                + " | Goles: " + jugador.getScoredGoals());
+                     });
+                    }
+
+                   
+                    */
                     break;
 
                 case 3: //Insertar un nuevo partido, aqui se saca la logica de jugadores que mas goles hicieron en el partido 
-                     break;
+                     
+                    
+                    break;
 
                 case 4: //Estadisticas de jugador
                     break;
