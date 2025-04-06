@@ -1,16 +1,12 @@
 package Data;
 
 import java.util.LinkedList;
-import java.util.LinkedList;
-import java.util.LinkedList;
-
 import Class.Player;
 import Class.Team;
 import Enum.PlayerRole;
 
 public class PlayerData {
-    
-        public static LinkedList<Player> createPlayersRealMadrid() {
+    public LinkedList<Player> createPlayersRealMadrid() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Courtois", PlayerRole.portero));
         jugadores.add(new Player("Carvajal", PlayerRole.defensa));
@@ -40,7 +36,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersBarcelona() {
+    public LinkedList<Player> createPlayersBarcelona() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Ter Stegen", PlayerRole.portero));
         jugadores.add(new Player("Araujo", PlayerRole.defensa));
@@ -70,7 +66,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersManchesterCity() {
+    public  LinkedList<Player> createPlayersManchesterCity() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Ederson", PlayerRole.portero));
         jugadores.add(new Player("Walker", PlayerRole.defensa));
@@ -100,7 +96,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersLiverpool() {
+    public  LinkedList<Player> createPlayersLiverpool() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Alisson", PlayerRole.portero));
         jugadores.add(new Player("Alexander-Arnold", PlayerRole.defensa));
@@ -130,7 +126,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersBayernMunich() {
+    public  LinkedList<Player> createPlayersBayernMunich() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Neuer", PlayerRole.portero));
         jugadores.add(new Player("Pavard", PlayerRole.defensa));
@@ -160,7 +156,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersParisSaintGermain() {
+    public  LinkedList<Player> createPlayersParisSaintGermain() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Donnarumma", PlayerRole.portero));
         jugadores.add(new Player("Hakimi", PlayerRole.defensa));
@@ -189,7 +185,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersJuventus() {
+    public  LinkedList<Player> createPlayersJuventus() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Szczesny", PlayerRole.portero));
         jugadores.add(new Player("Danilo", PlayerRole.defensa));
@@ -219,7 +215,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersInterMilan() {
+    public  LinkedList<Player> createPlayersInterMilan() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Onana", PlayerRole.portero));
         jugadores.add(new Player("Dumfries", PlayerRole.defensa));
@@ -249,7 +245,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersACMilan() {
+    public  LinkedList<Player> createPlayersACMilan() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Maignan", PlayerRole.portero));
         jugadores.add(new Player("Calabria", PlayerRole.defensa));
@@ -279,7 +275,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersBorussiaDortmund() {
+    public  LinkedList<Player> createPlayersBorussiaDortmund() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Kobel", PlayerRole.portero));
         jugadores.add(new Player("Ryerson", PlayerRole.defensa));
@@ -309,7 +305,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersAtleticoMadrid() {
+    public  LinkedList<Player> createPlayersAtleticoMadrid() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Oblak", PlayerRole.portero));
         jugadores.add(new Player("Molina", PlayerRole.defensa));
@@ -339,7 +335,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersSevilla() {
+    public  LinkedList<Player> createPlayersSevilla() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Bono", PlayerRole.portero));
         jugadores.add(new Player("Navas", PlayerRole.defensa));
@@ -369,7 +365,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersArsenal() {
+    public  LinkedList<Player> createPlayersArsenal() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Ramsdale", PlayerRole.portero));
         jugadores.add(new Player("White", PlayerRole.defensa));
@@ -399,7 +395,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersChelsea() {
+    public  LinkedList<Player> createPlayersChelsea() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Kepa", PlayerRole.portero));
         jugadores.add(new Player("James", PlayerRole.defensa));
@@ -428,7 +424,7 @@ public class PlayerData {
         jugadores.add(new Player("Cucurella", PlayerRole.defensa));
         return jugadores;
     }
-    public static LinkedList<Player> createPlayersAjax() {
+    public  LinkedList<Player> createPlayersAjax() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Rulli", PlayerRole.portero));
         jugadores.add(new Player("Rensch", PlayerRole.defensa));
@@ -458,7 +454,7 @@ public class PlayerData {
         return jugadores;
     }
 
-    public static LinkedList<Player> createPlayersPorto() {
+    public  LinkedList<Player> createPlayersPorto() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Costa", PlayerRole.portero));
         jugadores.add(new Player("Conceiçao", PlayerRole.defensa));
@@ -488,8 +484,24 @@ public class PlayerData {
         return jugadores;
     }
 
-
-    LinkedList<Team> teams = new LinkedList<>();
-
-  
+    public LinkedList<Team> createTeamsList() {
+        LinkedList<Team> equipos = new LinkedList<Team>();
+        equipos.add(new Team("Real Madrid",createPlayersRealMadrid()));
+        equipos.add(new Team("Barcelona",createPlayersBarcelona()));
+        equipos.add(new Team("Manchester City",createPlayersManchesterCity()));
+        equipos.add(new Team("Liverpool",createPlayersLiverpool()));
+        equipos.add(new Team("Bayern Munich",createPlayersBayernMunich()));
+        equipos.add(new Team("Paris Saint-Germain",createPlayersParisSaintGermain()));
+        equipos.add(new Team("Juventus",createPlayersJuventus()));
+        equipos.add(new Team("Inter de Milán",createPlayersInterMilan()));
+        equipos.add(new Team("AC Milan",createPlayersACMilan()));
+        equipos.add(new Team("Borussia Dortmund",createPlayersBorussiaDortmund()));
+        equipos.add( new Team("Atlético de Madrid",createPlayersAtleticoMadrid()));
+        equipos.add( new Team("Sevilla",createPlayersSevilla()));
+        equipos.add( new Team("Arsenal",createPlayersArsenal()));
+        equipos.add( new Team("Chelsea",createPlayersChelsea()));
+        equipos.add( new Team("Ajax",createPlayersAjax()));
+        equipos.add( new Team("Porto",createPlayersPorto()));
+        return equipos;
+    }
 }

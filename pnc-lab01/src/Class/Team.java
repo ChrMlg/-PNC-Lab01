@@ -12,12 +12,18 @@ public class Team {
     public Team() {
     }
 
-    public Team(String name) {
+    public Team(String name ) {
         this.id = idCounter++;
         this.name = name;
         this.players = new LinkedList<>();
     }
 
+
+    public Team(String name, LinkedList<Player> players) {
+        this.id = idCounter++;
+        this.name = name;
+        this.players = players;
+    }
 
     //method to add players to a team
     public void addPlayer(Player player){
