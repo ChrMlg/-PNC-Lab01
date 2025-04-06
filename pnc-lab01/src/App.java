@@ -216,6 +216,58 @@ public class App {
                     break;
 
                 case 5: //partidos realizados, seleccionar partido por fecha/ equipo
+
+                    /*
+                    
+                     System.out.println("¿Desea buscar los partidos por:");
+                     System.out.println("1. Fecha");
+                     System.out.println("2. Equipo");
+
+                     int criterio = scanner.nextInt();
+                     scanner.nextLine(); 
+
+                     if (criterio == 1) {
+                     // Buscar por fecha
+                        System.out.println("Fechas disponibles:");
+                        for (Match partido : MatchData.partidos) {
+                             System.out.println("- " + partido.getDate()); // puedes formatearla si quieres
+                        }
+
+                      System.out.print("Ingrese la fecha exacta (formato yyyy-mm-dd): ");
+                      String fechaStr = scanner.nextLine();
+                      Date fechaBuscada = parseFecha(fechaStr); // método utilitario para convertir String a Date
+
+                      for (Match partido : MatchData.partidos) {
+                          if (partido.getDate().equals(fechaBuscada)) {
+                              mostrarDetallesPartido(partido);
+                           }
+                      }
+
+                      } else if (criterio == 2) {
+                      
+                       // Buscar por equipo
+                       System.out.println("Equipos disponibles:");
+                       for (Team equipo : TeamData.equipo) {
+                            System.out.println("- " + equipo.getName());
+                        }
+
+                        System.out.print("Ingrese el nombre del equipo: ");
+                        String nombreEquipo = scanner.nextLine();
+
+                        for (Match partido : MatchData.partidos) {
+                             if (partido.getTeamA().getName().equalsIgnoreCase(nombreEquipo) || 
+                             partido.getTeamB().getName().equalsIgnoreCase(nombreEquipo)) {
+                
+                                  mostrarDetallesPartido(partido);
+                             }
+                         }
+
+                              } else {
+                                System.out.println("Opción no válida.");
+                                }
+                    
+                    */
+                    
                     break;
 
                 case 6: //Salir del sistema
