@@ -14,11 +14,11 @@ public class Player {
     public Player() {
     }
 
-    public Player(String name, int scoredGoals, int matches, PlayerRole role) {
+    public Player(String name, PlayerRole role) {
         this.id = idCounter++;
-        this.scoredGoals = scoredGoals;
+        this.scoredGoals = 0;
         this.name = name;
-        this.matches = matches;
+        this.matches = 0;
         this.role = role;
     }
 

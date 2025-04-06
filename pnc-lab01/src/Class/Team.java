@@ -48,7 +48,7 @@ public class Team {
     // print players on the team 
     public void displayPlayers(){
         for(Player player : players){
-            System.out.println(player);
+            System.out.println(player.getName());
         }
     }
 
