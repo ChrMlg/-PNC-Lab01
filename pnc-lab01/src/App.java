@@ -179,6 +179,40 @@ public class App {
                     break;
 
                 case 4: //Estadisticas de jugador
+
+                    /*
+
+                    System.out.print("Ingrese el ID del jugador del que desea saber sus estadisticas: ");
+                    int idBuscado = scanner.nextInt();
+                    scanner.nextLine(); //para q no nos falle
+
+                    boolean search = false;
+                    for (Team equipo : TeamData.equipo) {
+                        for (Player jugador : equipo.getPlayers()) {
+                            if (jugador.getId() == idBuscado) {
+                                System.out.println("|-----------------------------------------------------|");
+                                System.out.println("|\n--- Estadísticas del jugador ---|");
+                                System.out.println("ID: " + jugador.getId());
+                                System.out.println("Nombre: " + jugador.getName());
+                                System.out.println("Rol: " + jugador.getRole());
+                                System.out.println("Goles anotados: " + jugador.getScoredGoals());
+                                System.out.println("Partidos jugados: " + jugador.getMatches());
+                                System.out.println("|-----------------------------------------------------|");
+                                
+                                search = true;
+                                break;
+                             }
+                        }
+                        if (search) break;
+                     }
+
+                     if (!search){
+                     System.out.println("El jugador que solicitaste no se encuentra registrado");
+                     }
+                    
+                    
+                    */
+                    
                     break;
 
                 case 5: //partidos realizados, seleccionar partido por fecha/ equipo
