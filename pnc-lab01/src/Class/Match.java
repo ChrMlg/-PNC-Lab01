@@ -4,6 +4,8 @@ import java.util.Date;
 import java.util.LinkedList;
 
 public class Match {
+    private static int idCounter = 0; 
+
     private int id;
     private Date date;
     private Team teamB;
@@ -13,14 +15,15 @@ public class Match {
     private String location;
     private String stadium;
 
+    private Player goalie;
+
     // Constructor vacío
     public Match() {
     }
 
     // Constructor con parámetros, nos va a servir 
-    public Match(int id, Date date, Team teamA, Team teamB, int teamAGoals, int teamBGoals, String location, String stadium) {
-        this.id = id;
-        this.date = date;
+    public Match(Date date, Team teamA, Team teamB, int teamAGoals, int teamBGoals, String location, String stadium) {
+        this.id = idCounter++;
         this.teamA = teamA;
         this.teamB = teamB;
         this.teamAGoals = teamAGoals;
@@ -31,20 +34,14 @@ public class Match {
 
     // Getters y Setters
 
+    
+
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
     }
 
     public Team getTeamA() {
@@ -93,5 +90,13 @@ public class Match {
 
     public void setStadium(String stadium) {
         this.stadium = stadium;
+    }
+
+    public Player getGoalie() {
+        return goalie;
+    }
+
+    public void setGoalie(Player goalie) {
+        this.goalie = goalie;
     }
 }

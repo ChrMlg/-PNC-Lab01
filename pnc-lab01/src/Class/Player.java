@@ -58,4 +58,12 @@ public class Player {
         this.matches = matches;
     }
 
+    @Override
+    public String toString() {
+        return "Jugador [nombre: " + name + ", scoredGoals: " + scoredGoals + ", matches: " + matches + ", role: " + role
+                + "]";
+    }
+
+    
+
 }

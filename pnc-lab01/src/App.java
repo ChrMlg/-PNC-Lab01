@@ -23,12 +23,13 @@ public class App {
 
         do { 
              System.err.println("----------------------Menu Principal----------------------");
-             System.err.println("| 1)               Ver a los jugadores                    |");
-             System.err.println("| 2) Ver a los jugadores con mas de 5 goles por temporada |");
-             System.err.println("| 3)               Inserta un nuevo partido               |");
-             System.err.println("| 4)               Estadisticas por jugador               |");
-             System.err.println("| 5)                 Partidos realizados                  |");
-             System.err.println("| 6)                  Salir del sistema                   |");
+             System.err.println("| 1)                   Realizar partido                    |");
+             System.err.println("| 2)               Ver a los jugadores                    |");
+             System.err.println("| 3) Ver a los jugadores con mas de 5 goles por temporada |");
+             System.err.println("| 4)               Inserta un nuevo partido               |");
+             System.err.println("| 5)               Estadisticas por jugador               |");
+             System.err.println("| 6)                 Partidos realizados                  |");
+             System.err.println("| 7)                  Salir del sistema                   |");
              System.err.println("|         Seleccione la opcion que desea realizar         |");
              System.err.println("-----------------------------------------------------------");
              
@@ -36,6 +37,12 @@ public class App {
 
             switch (option) {
                 case 1: //Ver a los jugadores A y B
+
+                  
+
+
+
+                    String equipoA = sc.nextLine();
                     /*
                     
                     Borrador de como sera la estructura cuando ya este lo de DATA

@@ -424,6 +424,7 @@ public class PlayerData {
         jugadores.add(new Player("Cucurella", PlayerRole.defensa));
         return jugadores;
     }
+    
     public  LinkedList<Player> createPlayersAjax() {
         LinkedList<Player> jugadores = new LinkedList<>();
         jugadores.add(new Player("Rulli", PlayerRole.portero));
